@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "MAZLEG · מזלג",
+  "short_name": "MAZLEG",
+  "description": "Every seat has a story. Family seating, arranged with care.",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FFFFFF",
+  "theme_color": "#C5A352",
+  "categories": ["lifestyle", "social"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

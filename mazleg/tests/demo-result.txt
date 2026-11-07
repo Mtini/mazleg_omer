@@ -1,0 +1,24 @@
+PASS welcome offers both: create my family + try demo
+PASS demo opens without an account, demo badge visible
+PASS sample family has 2 dinners
+PASS sample family members listed (17)
+PASS sample dinner: 17 people, 14 voted, 3 connected tables  — 14/17
+PASS assistant suggested names and selection needs a tap (not auto-submitted)
+PASS demo vote counted (15/17)
+PASS smart seating generated (20 seats)
+PASS experimenting with seats works
+PASS 3D table shows all 17 names
+PASS presentation runs in demo (no real link produced)
+PASS past dinner already has a seating plan
+PASS reset restores the original demo (14/17, no plan)
+PASS demo made ZERO requests to database, auth or functions
+PASS demo stored only under its own key; real storage holds no demo data  — ['mazleg:demo:v1']
+PASS "Start my own family" leaves the demo and opens real sign-up
+PASS new real family starts empty — no demo data leaked  — (0, 0)
+PASS real organizer sees only demo data inside the demo
+PASS inside the demo even the organizer’s own workspace calls are blocked  — demo_mode
+PASS demo session made no API requests
+PASS exit returns to the real workspace intact
+PASS server copy of the real family untouched by the demo
+PASS no JavaScript errors
+23/23 demo checks passed

@@ -1,0 +1,14 @@
+{
+  "name": "mazleg",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MAZLEG — every seat has a story. Multi-family smart seating.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/engine.test.cjs tests/scene3d.test.cjs",
+    "test:db": "supabase test db",
+    "test:journey": "ALLOW_DEV_URL=1 SUPABASE_URL=http://127.0.0.1:8787 SUPABASE_ANON_KEY=test PUBLIC_SITE_URL=http://127.0.0.1:8787 node scripts/build.mjs && python3 tests/journey.py && python3 tests/demo_journey.py"
+  }
+}
